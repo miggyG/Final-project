@@ -1,5 +1,5 @@
 # Final-project
-Miguel Oyarzun
+Miguel Oyarzun- coder of everything
 
 I will be making a chess clone where two player will be able to play chess 
 skyline highschool 10th grade final project in python
