@@ -5,6 +5,9 @@ class chessboard:
         self.y = y
         
     def piece(self, x, y):
-        fill(120,120,0)
-        rect(x, y, 55, 55)
+        rectMode(CORNER)
+        noFill()
+        strokeWeight(2)
+        rect(x, y, 128, 125)
+        
         
