@@ -1,41 +1,28 @@
 import ChessBoard
 gs = ChessBoard.GameState()
-
+DIMENSION = 8
+SQ_SIZE = 100
+IMAGES = {}
+        
 def setup():
-    size(1200,1226)
-    backimg = loadImage("ChessBack.png")
-    background(backimg)
+    size(850,850)
+    
+
     
 def loadImages():
-    loadImage("bP.png")
-    loadImage("bR.png")
-    loadImage("bN.png")
-    loadImage("bB.png")
-    loadImage("bQ.png")
-    loadImage("bK.png")
-    loadImage("wP.png")
-    loadImage("wR.png")
-    loadImage("wN.png")
-    loadImage("wB.png")
-    loadImage("wQ.png")
-    loadImage("wK.png")
+    pieces = ["wP","wR","wN","wB","wQ","wK","bP","wR","wN","wB","wQ","wK"]
+    for piece in pieces:
+        IMAGES[piece] = loadImage(piece+".png")
+
 
 
 def main():
     print(gs.board)
     loadImages()
-    drawGameState(gs)
+    #drawGameState(gs)
 
-def drawGameState(gs):
-    drawBoard()
-    
-    drawPieces()
-    
-def drawBoard():
-    
-    
-def drawPieces():
 
+    
 if __name__ == "__main__":
     main()
     
